@@ -1,0 +1,20 @@
+.top{
+    text-align: center;
+}
+
+
+
+.page-area{
+    width: 800px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgb(213, 213, 227);
+    box-shadow: inset 0 0 107px -42px #000;
+}
+
+.card{
+    display: inline-block;
+    margin: 0 10px 10px;
+    width: 22%;
+    padding-top: 1rem;
+}

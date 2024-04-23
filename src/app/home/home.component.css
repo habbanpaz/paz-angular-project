@@ -1,0 +1,11 @@
+h2, p{
+    text-align: center;
+}
+
+.page-area{
+    width: 800px;
+    margin: auto;
+    height: 300px;
+    padding: 30px;
+    background-color: rgb(247, 0, 255);
+}
