@@ -1,9 +1,13 @@
 <div class="page-area">
-    <h2 class="top">Buy Products</h2>
-    <p class="top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perferendis voluptas laboriosam, officiis labore
-        possimus magni, vel qui quisquam cupiditate atque libero molestiae voluptates ullam harum voluptatum incidunt
-        odit exercitationem.</p>
+    <div class="text-center">
+        <h2>Buy Products</h2>
+    </div>
+    <div class="alert alert-light border d-flex align-items-center">
+        <strong class="text-success">Laptop</strong> &nbsp; is sleected and added in cart
+        <button class="btn btn-success ms-auto">Checkout</button>
+    </div>
     <hr class="mb-3">
+
 
     <div class="row">
         <div class="col-md-12">
@@ -11,28 +15,28 @@
                 <img src="../../assets/laptop.webp" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Laptop</h5>
-                    <button class="btn btn-success" (click)="onSelectProduct()" >Select</button>
+                    <button class="btn btn-success" (click)="onSelectProduct('laptop')">Select</button>
                 </div>
             </div>
             <div class="card">
                 <img src="../../assets/mobile2.jpeg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Mobile</h5>
-                    <button class="btn btn-success" (click)="onSelectProduct()" >Select</button>
+                    <button class="btn btn-success" (click)="onSelectProduct('mobile')">Select</button>
                 </div>
             </div>
             <div class="card">
                 <img src="../../assets/tv.png" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">TV</h5>
-                    <button class="btn btn-success" (click)="onSelectProduct()" >Select</button>
+                    <button class="btn btn-success" (click)="onSelectProduct('tv')">Select</button>
                 </div>
             </div>
             <div class="card">
                 <img src="../../assets/washingmachine.webp" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Washing Machine</h5>
-                    <button class="btn btn-success" (click)="onSelectProduct()" >Select</button>
+                    <button class="btn btn-success" (click)="onSelectProduct('wm')">Select</button>
                 </div>
             </div>
         </div>

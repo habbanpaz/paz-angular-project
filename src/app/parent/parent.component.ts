@@ -13,11 +13,16 @@ export class ParentComponent implements OnInit {
   
   ngOnInit(): void {
   }
-  selectedProduct!: string;
 
+  selectedProduct: any;
   productSelected:boolean = true
-  onSelectProduct(){
-    this.productSelected = true
+  addedProduct:any;
+
+  onSelectProduct(product: string ){
+    this.productSelected = true;
+    this.selectedProduct = product;
   }
+
+
 
 }
