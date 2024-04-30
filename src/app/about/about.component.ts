@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  Input } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -7,8 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  value!:string;
+
+  comp1Exist:boolean = true;
+
+  @Input() message: any;
+
   constructor() { }
 
+  
+  submitValue(val:any){
+    this.value = val.value
+  }
+  
+  destroy(){
+    this.comp1Exist = false
+  }
+  
   ngOnInit(): void {
   }
 

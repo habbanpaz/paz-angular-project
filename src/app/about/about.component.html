@@ -1,6 +1,10 @@
 <div class="page-area">
     <h2>About</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, perferendis voluptas laboriosam, officiis labore
-        possimus magni, vel qui quisquam cupiditate atque libero molestiae voluptates ullam harum voluptatum incidunt
-        odit exercitationem.</p>
+    <input type="text" placeholder="input here" #val>
+    <button (click)="submitValue(val)" >Submit Value</button>
+    <app-comp1 *ngIf="comp1Exist" [myValue]="value" > ngContent: {{value}} </app-comp1>
+<br>
+<br>
+<button class="btn btn-danger" (click)="destroy()">Destroy component</button>
+
 </div>

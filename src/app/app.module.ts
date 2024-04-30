@@ -18,9 +18,14 @@ import { ChildComponent } from './child/child.component';
 import { CardComponent } from './card/card.component';
 import { Card2Component } from './card2/card2.component';
 import { DesignutilityService } from './appServices/designutility.service';
+import { Comp1Component } from './comp1/comp1.component';
+import { Comp2Component } from './comp2/comp2.component';
+import { Comp3Component } from './comp3/comp3.component';
+import { Comp4Component } from './comp4/comp4.component';
+import { TestdirectivesDirective } from './appDirectives/testdirectives.directive';
 
 const appRoutes:Routes=[
-  {path: '' , redirectTo: 'login', pathMatch: 'full'},
+  {path: '' , redirectTo: 'home', pathMatch: 'full'},
   {path: 'home' , component: HomeComponent},
   {path: 'login' , component: LoginComponent},
   {path: 'about' , component: AboutComponent},
@@ -58,7 +63,12 @@ const appRoutes:Routes=[
     ParentComponent,
     ChildComponent,
     CardComponent,
-    Card2Component
+    Card2Component,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
+    Comp4Component,
+    TestdirectivesDirective,
   ],
   imports: [
     BrowserModule,

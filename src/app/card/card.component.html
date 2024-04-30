@@ -1,9 +1,18 @@
-<div class="card">
-    <div>
-        <ng-container class="card-body text-left-align" *ngFor="let product of product"  >
-            Product Name: <strong>{{product.name}} </strong>
-           &nbsp; Product Id: <strong>{{product.id}}</strong>
-           &nbsp; Product Id: <strong>{{product.email}}</strong>
-        </ng-container>
-    </div>
+<div class="page-area">
+    <table>
+        <thead>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of product">
+                <td scope="row">{{product.id}}</td>
+                <td scope="row">{{product.name}}</td>
+                <td scope="row">{{product.username}}</td>
+                <td scope="row">{{product.email}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

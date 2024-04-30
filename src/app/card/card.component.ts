@@ -14,7 +14,7 @@ export class CardComponent implements OnInit {
   constructor(private _msgService:DesignutilityService) { }
  
   product = [{
-    name:"mobile", id: "00213", email: 'knckxncmkz'
+    name:"mobile", id: "00213", email: 'knckxncmkz', username: 'mxcmxm'
   }]
   
   ngOnInit(): void {
